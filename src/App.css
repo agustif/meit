@@ -1,38 +1,110 @@
 .App {
-  text-align: center;
+  padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ol {
+  counter-increment: li;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li::marker {
+  content: counter(li) " - ";
+}
+
+.button {
+  display: block;
+  background-color: #ffe6cc;
+  border-radius: 0.2rem;
+  border: 1px solid #e08e00;
+  padding-block: 0.25rem;
+  height: 2rem;
+}
+
+.properties-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-.App-link {
-  color: #61dafb;
+section {
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+form {
+  padding: 20px 40px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  max-width: fit-content;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 16px;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b35a00;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.delete {
+  padding: 8px 16px;
+  background-color: #c50000;
+  color: #fff;
+}
+
+.delete:hover {
+  background-color: #a00000;
+}
+
+.confirm {
+  background-color: #00c500;
+}
+
+.confirm:hover {
+  background-color: #00a000;
+}
+
+.cancel {
+  background-color: #dddddd;
+  color: black;
+}
+
+.confirm,
+.cancel {
+  margin-right: 10px;
 }
