@@ -7,9 +7,9 @@ interface PropertyFormProps {
 
 const PropertyForm: React.FC<PropertyFormProps> = ({ addProperty }) => {
   const [title, setTitle] = useState('');
-  const [rooms, setRooms] = useState(1);
-  const [bathrooms, setBathrooms] = useState(1);
-  const [price, setPrice] = useState(900);
+  const [rooms, setRooms] = useState(0);
+  const [bathrooms, setBathrooms] = useState(0);
+  const [price, setPrice] = useState(0);
 
   const handleTitleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTitle(e.target.value);
