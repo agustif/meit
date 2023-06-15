@@ -54,7 +54,7 @@ const downloadPDF = (properties: Property[]) => {
     images: {
       thumbnail: 'https://source.unsplash.com/random/180x100?house,empty',
       // FIXME: replace localhost for ENV var for vercel deployment.
-      logo: 'http://localhost:3000/logo.png',
+      logo: process.env.VERCEL_URL ? process.env.VERCEL_URL + '/logo.png' :'http://localhost:3000/logo.png',
     },
     styles: {
       header: {
