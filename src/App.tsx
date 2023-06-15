@@ -4,6 +4,7 @@ import PropertyForm from './components/PropertyForm';
 import PropertyList from './components/PropertyList';
 import PropertyType from './types/Property';
 import './App.css';
+
 function App() {
   // Here we store properties in state, as an array of PropertyType objects
   // This could be a call to our API instead of an empty array
