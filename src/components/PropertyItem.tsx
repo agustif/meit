@@ -3,6 +3,7 @@ import DeleteButton from './DeleteButton';
 
 interface PropertyItemProps {
   property: PropertyType;
+  key: number;
   deleteProperty: (propertyId: number) => void;
 }
 
@@ -16,7 +17,8 @@ const PropertyItem: React.FC<PropertyItemProps> = ({ property, deleteProperty })
       <div className='property-item-container'>
         <div className='item-details'>
           <h3>{property.title}</h3>
-          <p>Rooms: {property.rooms} - Bathrooms: {property.bathrooms}</p>
+          <p>{property.rooms} Habitaciones</p>
+          <p>{property.bathrooms} Baños</p>
         </div>
         <div className='item-right-column'>
         <p>{property.price} €</p>
