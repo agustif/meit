@@ -1,5 +1,8 @@
 .App {
   padding: 2rem;
+  min-width: 380px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 h2 {
@@ -45,7 +48,6 @@ form {
   padding: 20px 40px;
   border: 1px solid #ccc;
   background-color: #f8f8f8;
-  max-width: fit-content;
 }
 
 label {
@@ -85,6 +87,7 @@ button:disabled {
   padding: 8px 16px;
   background-color: #c50000;
   color: #fff;
+  margin-left: 1em;
 }
 
 .delete:hover {
@@ -92,7 +95,9 @@ button:disabled {
 }
 
 .confirm {
-  background-color: #00c500;
+  margin-right: 10px;
+  color: white;
+  background-color: #005f00;
 }
 
 .confirm:hover {
@@ -104,7 +109,41 @@ button:disabled {
   color: black;
 }
 
-.confirm,
-.cancel {
-  margin-right: 10px;
+
+.property-item-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100vw;
+  border-bottom: 1px dotted black;
+
+}
+
+.item-details {
+  padding: 20px;
+}
+
+.item-right-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tooltip {
+  position: absolute;
+  right: 90px;
+  padding: 10px 20px;
+  width: 30%;
+  max-width: fit-content;
+  background-color: #f8f8f8;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #99999950;
+}
+
+.list-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }

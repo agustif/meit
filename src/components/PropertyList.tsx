@@ -18,10 +18,11 @@ const PropertyList: React.FC<PropertyListProps> = ({ properties, deleteProperty 
   };
 
   return (
-    <main>
-    <h2>List - Sorted by Price</h2>
-    <PDFButton disabled={sortedProperties.length <= 0} onClick={handleDownloadPDF} />
-
+    <div>
+      <div className="list-title">
+      <h2>List - Sorted by Price</h2>
+      <PDFButton disabled={sortedProperties.length <= 0} onClick={handleDownloadPDF} />
+      </div>
       {sortedProperties.map((property: PropertyType) => (
         <ol>
         <PropertyItem
@@ -31,7 +32,7 @@ const PropertyList: React.FC<PropertyListProps> = ({ properties, deleteProperty 
           />
           </ol>
       ))}
-      </main>
+      </div>
   );
 };
 
