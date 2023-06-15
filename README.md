@@ -37,7 +37,7 @@ Puedes personalizar la apariencia y el comportamiento de la aplicación mediante
 - `src/components/PropertyList.js`: Componente que muestra la lista de propiedades.
 - `src/components/PropertyForm.js`: Componente que permite agregar nuevas propiedades.
 - `src/components/PropertyItem.js`: Componente que representa un elemento de la lista de propiedades.
-- `src/styles`: Carpeta que contiene los estilos de la aplicación.
+- `src/App.css`: Carpeta que contiene los estilos de la aplicación.
 
 ## Dependencias
 
