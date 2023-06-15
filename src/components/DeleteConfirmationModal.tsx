@@ -8,10 +8,10 @@ const DeleteConfirmationModal: React.FC<DeleteConfirmationModalProps> = ({
   onCancel,
 }) => {
   return (
-    <div>
+    <div className="tooltip">
       <p>Are you sure you want to delete this property?</p>
-      <button onClick={onConfirm}>Confirm</button>
-      <button onClick={onCancel}>Cancel</button>
+      <button className="confirm" onClick={onConfirm}>Confirm</button>
+      <button className="cancel" onClick={onCancel}>Cancel</button>
     </div>
   );
 };
