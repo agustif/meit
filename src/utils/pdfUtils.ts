@@ -44,7 +44,7 @@ const downloadPDF = (properties: Property[]) => {
             },
           ],
           columnGap: 10, // Add gap between thumbnail and property details
-          marginBottom: 12, // Add margin at the bottom of each property
+          marginBottom: 2, // Add margin at the bottom of each property
         },
         { canvas: [{ type: 'line', x1: 0, y1: 5, x2: 495, y2: 5 }] }, // Add line break separator
         // add blank space
